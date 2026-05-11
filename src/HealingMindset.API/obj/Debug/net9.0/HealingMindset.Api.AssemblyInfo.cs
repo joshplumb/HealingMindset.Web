@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HealingMindset.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d22a28586d29fa53b44074d0abe3d909c1597e03")]
 [assembly: System.Reflection.AssemblyProductAttribute("HealingMindset.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HealingMindset.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
