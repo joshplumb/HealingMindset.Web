@@ -1,0 +1,11 @@
+C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Core\bin\Debug\net9.0\HealingMindset.Core.deps.json
+C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Core\bin\Debug\net9.0\HealingMindset.Core.dll
+C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Core\bin\Debug\net9.0\HealingMindset.Core.pdb
+C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Core\obj\Debug\net9.0\HealingMindset.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Core\obj\Debug\net9.0\HealingMindset.Core.AssemblyInfoInputs.cache
+C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Core\obj\Debug\net9.0\HealingMindset.Core.AssemblyInfo.cs
+C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Core\obj\Debug\net9.0\HealingMindset.Core.csproj.CoreCompileInputs.cache
+C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Core\obj\Debug\net9.0\HealingMindset.Core.dll
+C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Core\obj\Debug\net9.0\refint\HealingMindset.Core.dll
+C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Core\obj\Debug\net9.0\HealingMindset.Core.pdb
+C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Core\obj\Debug\net9.0\ref\HealingMindset.Core.dll
