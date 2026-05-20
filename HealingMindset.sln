@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{827E0CD3-B72
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealingMindset.Api", "src\HealingMindset.Api\HealingMindset.Api.csproj", "{78284F74-981C-438A-BE4F-33306C5AAC84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealingMindset.Core", "src\HealingMindset.Core\HealingMindset.Core.csproj", "{44FEC281-3173-4662-BC19-80CB32CD0A10}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealingMindset.Repositories", "src\HealingMindset.Core\HealingMindset.Repositories.csproj", "{44FEC281-3173-4662-BC19-80CB32CD0A10}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,5 +50,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{78284F74-981C-438A-BE4F-33306C5AAC84} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 		{44FEC281-3173-4662-BC19-80CB32CD0A10} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A1C75B34-300B-4B79-A445-5FAC0E5B60A6}
 	EndGlobalSection
 EndGlobal

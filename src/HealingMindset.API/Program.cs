@@ -1,5 +1,6 @@
-using HealingMindset.Core.Interfaces;
-using HealingMindset.Core.Services;
+using HealingMindset.Repositories.Interfaces;
+using HealingMindset.Repositories.Repositories;
+using HealingMindset.Repositories.Shared;
 using Microsoft.AspNetCore.OpenApi;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,9 +8,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+builder.Services.AddScoped<IVideoResourceService, VideoResourceRepository>();
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddScoped<IVideoService, MockVideoService>();
+
 
 builder.Services.AddCors(options =>
 {
@@ -35,6 +38,6 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/api/videos", (IVideoService videoService) => videoService.GetAllVideosAsync());
+app.MapGet("/api/videos", (IVideoResourceService videoService) => videoService.GetAllVideoResourcesAsync());
 
 app.Run();

@@ -1,0 +1,6 @@
+C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Core\obj\Debug\net9.0\HealingMindset.Repositories.csproj.AssemblyReference.cache
+C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Core\obj\Debug\net9.0\HealingMindset.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Core\obj\Debug\net9.0\HealingMindset.Repositories.AssemblyInfoInputs.cache
+C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Core\obj\Debug\net9.0\HealingMindset.Repositories.AssemblyInfo.cs
+C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Core\obj\Debug\net9.0\HealingMindset.Repositories.csproj.CoreCompileInputs.cache
+C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Core\obj\Debug\net9.0\HealingMindset.Repositories.sourcelink.json

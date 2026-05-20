@@ -32,8 +32,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Core\\HealingMindset.Core.csproj": {
-                "projectPath": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Core\\HealingMindset.Core.csproj"
+              "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Core\\HealingMindset.Repositories.csproj": {
+                "projectPath": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Core\\HealingMindset.Repositories.csproj"
               }
             }
           }
@@ -56,11 +56,25 @@
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[9.0.15, )"
+              "version": "[9.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.16, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[9.0.6, )"
+              "version": "[10.1.7, )"
             }
           },
           "imports": [
@@ -86,12 +100,12 @@
         }
       }
     },
-    "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Core\\HealingMindset.Core.csproj": {
+    "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Core\\HealingMindset.Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Core\\HealingMindset.Core.csproj",
-        "projectName": "HealingMindset.Core",
-        "projectPath": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Core\\HealingMindset.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Core\\HealingMindset.Repositories.csproj",
+        "projectName": "HealingMindset.Repositories",
+        "projectPath": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Core\\HealingMindset.Repositories.csproj",
         "packagesPath": "C:\\Users\\Matthew\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Core\\obj\\",
         "projectStyle": "PackageReference",
@@ -131,6 +145,16 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.16, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.16, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

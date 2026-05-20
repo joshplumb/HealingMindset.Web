@@ -134,3 +134,15 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+Plaintext
+# ==========================================
+# Visual Studio / .NET Core Rules
+# ==========================================
+.vs/
+[Ob]bj/
+[Bb]in/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
