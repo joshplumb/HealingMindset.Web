@@ -13,6 +13,12 @@ namespace HealingMindset.Repositories.Repositories
         {
             _context = context;
         }
+
+        public async Task<VideoResourceModel> Create(VideoResourceModel videoResource)
+        {
+            await _context.AddAsync(videoResource);
+
+        }
     }
 }
 
