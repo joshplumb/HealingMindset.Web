@@ -1,0 +1,64 @@
+<!-- healing-page-wrapper -->
+<div class="flex min-h-screen justify-center bg-gradient-to-br from-[#fff5f5] to-[#fef2f2] px-5 py-[60px]">
+  
+  <!-- content-card -->
+  <div class="w-full max-w-[650px] rounded-[32px] border border-[#fecaca] bg-white p-12 shadow-[0_25px_50px_-12px_rgba(153,27,27,0.05)]">
+    
+    <!-- video-header -->
+    <header class="text-center">
+      <h1 class="mb-2 font-serif text-[3.2rem] italic leading-tight text-healing-deep tracking-wider drop-shadow-sm">
+        Healing Mindset Library
+      </h1>
+      <p class="font-sans text-[0.9rem] font-medium uppercase tracking-[2px] text-[#991b1b] opacity-60">
+        Curated sessions for emotional well-being
+      </p>
+    </header>
+
+    <!-- main-video-area -->
+    <main class="mt-10 w-full">
+      
+      <!-- video-wrapper -->
+      <div class="relative overflow-hidden rounded-[24px] bg-black border-4 border-healing-pink shadow-[0_20px_40px_rgba(153,27,27,0.1)]">
+        <!-- video-responsive (16:9 Aspect Ratio) -->
+        <div class="aspect-video w-full">
+          @for (video of (videos$ | async); track video.$index)
+          {
+            <youtube-player 
+            class="h-full w-full"
+            [videoId]="video.youtubeId"
+            [width]="null"
+            [height]="null">
+          </youtube-player>
+          }
+        </div>
+      </div>
+
+      <!-- video-details -->
+      <section class="mt-8 flex flex-col md:flex-row md:justify-between md:gap-8">
+        
+        <div class="max-w-2xl">
+          <h2 class="font-serif text-2xl italic text-healing-deep">Guided Mindfulness Session</h2>
+          <p class="mt-2 font-sans text-gray-600 leading-relaxed">
+            This practice focuses on nervous system regulation. Use this session when you feel overwhelmed or disconnected from the present moment.
+          </p>
+        </div>
+
+        <div class="mt-6 md:mt-0 min-w-[200px]">
+          <span class="mb-2 block text-[0.8rem] font-semibold uppercase text-[#9f1239]">Session Focus:</span>
+          <div class="flex flex-wrap gap-2">
+            <span class="rounded-full border border-[#ffe4e6] bg-healing-pink px-5 py-2 text-[0.9rem] font-medium text-healing-rose transition-all hover:-translate-y-0.5 hover:bg-[#fb7185] hover:text-white cursor-default">
+              ✓ Anxiety Relief
+            </span>
+            <span class="rounded-full border border-[#ffe4e6] bg-healing-pink px-5 py-2 text-[0.9rem] font-medium text-healing-rose transition-all hover:-translate-y-0.5 hover:bg-[#fb7185] hover:text-white cursor-default">
+              ✓ Meditation
+            </span>
+            <span class="rounded-full border border-[#ffe4e6] bg-healing-pink px-5 py-2 text-[0.9rem] font-medium text-healing-rose transition-all hover:-translate-y-0.5 hover:bg-[#fb7185] hover:text-white cursor-default">
+              ✓ Self-Care
+            </span>
+          </div>
+        </div>
+
+      </section>
+    </main>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="flex min-h-screen bg-[#fff5f5]">
+  <aside class="w-64 border-r border-[#fecaca] bg-white p-6 shadow-sm">
+    <nav class="space-y-4">
+      <h2 class="font-serif text-xl italic text-healing-deep mb-8">Healing Mindset</h2>
+      
+      <a routerLink="/" 
+         routerLinkActive="bg-healing-pink text-healing-rose" 
+         [routerLinkActiveOptions]="{exact: true}"
+         class="block rounded-xl px-4 py-3 font-medium transition-colors hover:bg-[#fff1f2]">
+         Home
+      </a>
+
+      <a routerLink="/video-component" 
+         routerLinkActive="bg-healing-pink text-healing-rose"
+         class="block rounded-xl px-4 py-3 font-medium transition-colors hover:bg-[#fff1f2]">
+         Video Library
+      </a>
+    </nav>
+  </aside>
+
+  <main class="flex-1">
+    <router-outlet></router-outlet>
+  </main>
+</div>

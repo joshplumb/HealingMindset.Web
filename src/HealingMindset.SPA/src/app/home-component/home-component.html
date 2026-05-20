@@ -1,0 +1,48 @@
+<div class="flex min-h-screen justify-center bg-gradient-to-br from-[#fff5f5] to-[#fef2f2] px-5 py-[60px]">
+  
+  <div class="w-full max-w-[650px] rounded-[32px] border border-[#fecaca] bg-white p-12 shadow-[0_25px_50px_-12px_rgba(153,27,27,0.05)] text-center">
+    
+    <header>
+      <h1 class="mb-4 font-serif text-[3.5rem] italic leading-tight text-healing-deep tracking-wider drop-shadow-sm">
+        Welcome Home
+      </h1>
+      <p class="font-sans text-[1rem] font-medium uppercase tracking-[2px] text-[#991b1b] opacity-60">
+        Your space for restoration
+      </p>
+    </header>
+
+    <main class="mt-12 w-full">
+      <div class="mb-10 overflow-hidden rounded-[24px] border-4 border-healing-pink shadow-sm">
+        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=1000" 
+             alt="Calming nature" 
+             class="h-64 w-full object-cover">
+      </div>
+
+      <div class="space-y-6">
+        <p class="font-sans text-[1.1rem] leading-relaxed text-gray-600">
+          Take a moment to breathe. Our library is designed to help you regulate your nervous system and find clarity in the chaos of daily life.
+        </p>
+
+        <div class="pt-6">
+          <a [routerLink]="['/video-component']" 
+             class="inline-block rounded-full bg-[#9f1239] px-10 py-4 text-lg font-semibold text-white shadow-lg transition-all hover:scale-105 hover:bg-[#be123c] active:scale-95">
+            Enter the Library
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="mt-12 border-t border-[#fecaca] pt-8">
+      <div class="flex justify-around text-center">
+        <div>
+          <span class="block text-2xl font-serif italic text-healing-deep">12+</span>
+          <span class="text-[0.7rem] uppercase tracking-widest text-gray-400">Sessions</span>
+        </div>
+        <div>
+          <span class="block text-2xl font-serif italic text-healing-deep">∞</span>
+          <span class="text-[0.7rem] uppercase tracking-widest text-gray-400">Peace</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
