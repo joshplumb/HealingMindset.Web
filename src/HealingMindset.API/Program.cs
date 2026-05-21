@@ -1,5 +1,6 @@
 using HealingMindset.Repositories.Interfaces;
 using HealingMindset.Repositories.Repositories;
+using HealingMindset.Repositories.Context;
 using Microsoft.EntityFrameworkCore;
 using HealingMindset.Repositories.Shared;
 using Microsoft.AspNetCore.OpenApi;
@@ -40,6 +41,6 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/api/videos", (IVideoResourceService videoService) => videoService.GetAllVideoResourcesAsync());
+app.MapGet("/api/videos", (IVideoResourceService videoService) => videoService.GetAll());
 
 app.Run();

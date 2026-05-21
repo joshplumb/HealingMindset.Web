@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HealingMindset.Core\HealingMindset.Repositories.csproj" />
+    <ProjectReference Include="..\HealingMindset.Repositories\HealingMindset.Repositories.csproj" />
   </ItemGroup>
 
 </Project>
