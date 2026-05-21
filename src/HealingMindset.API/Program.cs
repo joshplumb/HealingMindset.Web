@@ -2,8 +2,6 @@ using HealingMindset.Repositories.Interfaces;
 using HealingMindset.Repositories.Repositories;
 using HealingMindset.Repositories.Context;
 using Microsoft.EntityFrameworkCore;
-using HealingMindset.Repositories.Shared;
-using Microsoft.AspNetCore.OpenApi;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 builder.Services.AddScoped<IVideoResourceService, VideoResourceRepository>();
-builder.AddDbContext<VideoResourceDatabaseContext>(options => options.)
+builder.Services.AddDbContext<VideoResourceDatabaseContext>(options => 
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

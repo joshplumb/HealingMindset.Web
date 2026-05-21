@@ -8,15 +8,12 @@ C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\bin\Debug\net9
 C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\bin\Debug\net9.0\HealingMindset.Api.pdb
 C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\bin\Debug\net9.0\Microsoft.OpenApi.dll
-C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\bin\Debug\net9.0\HealingMindset.Core.dll
-C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\bin\Debug\net9.0\HealingMindset.Core.pdb
 C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\obj\Debug\net9.0\HealingMindset.Api.csproj.AssemblyReference.cache
 C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\obj\Debug\net9.0\rpswa.dswa.cache.json
 C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\obj\Debug\net9.0\HealingMindset.Api.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\obj\Debug\net9.0\HealingMindset.Api.AssemblyInfoInputs.cache
 C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\obj\Debug\net9.0\HealingMindset.Api.AssemblyInfo.cs
 C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\obj\Debug\net9.0\HealingMindset.Api.csproj.CoreCompileInputs.cache
-C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\obj\Debug\net9.0\HealingMindset.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\obj\Debug\net9.0\HealingMindset.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\obj\Debug\net9.0\rjimswa.dswa.cache.json
 C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
@@ -35,7 +32,6 @@ C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\obj\Debug\net9
 C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\obj\Debug\net9.0\HealingMindset.Api.sourcelink.json
 C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\bin\Debug\net9.0\Humanizer.dll
 C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -135,3 +131,7 @@ C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\bin\Debug\net9
 C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.API\bin\Debug\net9.0\HealingMindset.Repositories.dll
+C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.API\bin\Debug\net9.0\HealingMindset.Repositories.pdb
+C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.API\obj\Debug\net9.0\HealingMindset.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

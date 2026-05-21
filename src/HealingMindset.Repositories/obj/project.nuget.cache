@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "FMb+8cSzC70=",
+  "dgSpecHash": "kHmnl4QYaIU=",
   "success": true,
   "projectFilePath": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Repositories\\HealingMindset.Repositories.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Matthew\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.16\\microsoft.entityframeworkcore.9.0.16.nupkg.sha512",
     "C:\\Users\\Matthew\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.16\\microsoft.entityframeworkcore.abstractions.9.0.16.nupkg.sha512",
     "C:\\Users\\Matthew\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.16\\microsoft.entityframeworkcore.analyzers.9.0.16.nupkg.sha512",
+    "C:\\Users\\Matthew\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\9.0.16\\microsoft.entityframeworkcore.relational.9.0.16.nupkg.sha512",
     "C:\\Users\\Matthew\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.16\\microsoft.extensions.caching.abstractions.9.0.16.nupkg.sha512",
     "C:\\Users\\Matthew\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.16\\microsoft.extensions.caching.memory.9.0.16.nupkg.sha512",
     "C:\\Users\\Matthew\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.16\\microsoft.extensions.configuration.abstractions.9.0.16.nupkg.sha512",
@@ -15,7 +16,9 @@
     "C:\\Users\\Matthew\\.nuget\\packages\\microsoft.extensions.logging\\9.0.16\\microsoft.extensions.logging.9.0.16.nupkg.sha512",
     "C:\\Users\\Matthew\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.16\\microsoft.extensions.logging.abstractions.9.0.16.nupkg.sha512",
     "C:\\Users\\Matthew\\.nuget\\packages\\microsoft.extensions.options\\9.0.16\\microsoft.extensions.options.9.0.16.nupkg.sha512",
-    "C:\\Users\\Matthew\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.16\\microsoft.extensions.primitives.9.0.16.nupkg.sha512"
+    "C:\\Users\\Matthew\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.16\\microsoft.extensions.primitives.9.0.16.nupkg.sha512",
+    "C:\\Users\\Matthew\\.nuget\\packages\\npgsql\\9.0.2\\npgsql.9.0.2.nupkg.sha512",
+    "C:\\Users\\Matthew\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\9.0.3\\npgsql.entityframeworkcore.postgresql.9.0.3.nupkg.sha512"
   ],
   "logs": []
 }

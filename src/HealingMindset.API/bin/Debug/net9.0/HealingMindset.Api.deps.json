@@ -8,8 +8,9 @@
     ".NETCoreApp,Version=v9.0": {
       "HealingMindset.Api/1.0.0": {
         "dependencies": {
-          "HealingMindset.Core": "1.0.0",
+          "HealingMindset.Repositories": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "9.0.16",
+          "Microsoft.EntityFrameworkCore": "9.0.16",
           "Microsoft.EntityFrameworkCore.Design": "9.0.16",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
           "Swashbuckle.AspNetCore": "10.1.7"
@@ -671,9 +672,15 @@
         }
       },
       "System.Threading.Channels/7.0.0": {},
-      "HealingMindset.Core/1.0.0": {
+      "HealingMindset.Repositories/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.16",
+          "Microsoft.EntityFrameworkCore.Relational": "9.0.16",
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.16",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4"
+        },
         "runtime": {
-          "HealingMindset.Core.dll": {
+          "HealingMindset.Repositories.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1023,7 +1030,7 @@
       "path": "system.threading.channels/7.0.0",
       "hashPath": "system.threading.channels.7.0.0.nupkg.sha512"
     },
-    "HealingMindset.Core/1.0.0": {
+    "HealingMindset.Repositories/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

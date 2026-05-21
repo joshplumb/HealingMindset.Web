@@ -7,36 +7,8 @@
       "RelativeMoniker": "D:0:0:{78284F74-981C-438A-BE4F-33306C5AAC84}|src\\HealingMindset.Api\\HealingMindset.Api.csproj|solutionrelative:src\\healingmindset.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{752CCF7D-F472-366B-228B-2386671DB541}|src\\HealingMindset.Repositories\\HealingMindset.Repositories.csproj|c:\\users\\matthew\\source\\healingmindset.web\\src\\healingmindset.repositories\\repositories\\videoresourcerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{752CCF7D-F472-366B-228B-2386671DB541}|src\\HealingMindset.Repositories\\HealingMindset.Repositories.csproj|solutionrelative:src\\healingmindset.repositories\\repositories\\videoresourcerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{752CCF7D-F472-366B-228B-2386671DB541}|src\\HealingMindset.Repositories\\HealingMindset.Repositories.csproj|c:\\users\\matthew\\source\\healingmindset.web\\src\\healingmindset.repositories\\repositories\\mockvideoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{752CCF7D-F472-366B-228B-2386671DB541}|src\\HealingMindset.Repositories\\HealingMindset.Repositories.csproj|solutionrelative:src\\healingmindset.repositories\\repositories\\mockvideoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{752CCF7D-F472-366B-228B-2386671DB541}|src\\HealingMindset.Repositories\\HealingMindset.Repositories.csproj|c:\\users\\matthew\\source\\healingmindset.web\\src\\healingmindset.repositories\\interfaces\\ivideoresourceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{752CCF7D-F472-366B-228B-2386671DB541}|src\\HealingMindset.Repositories\\HealingMindset.Repositories.csproj|solutionrelative:src\\healingmindset.repositories\\interfaces\\ivideoresourceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Core\\Repositories\\VideoResourceRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HealingMindset.Core\\Repositories\\VideoResourceRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Core\\Shared\\BaseRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HealingMindset.Core\\Shared\\BaseRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Core\\Models\\VideoResourceModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HealingMindset.Core\\Models\\VideoResourceModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Core\\Interfaces\\IVideoResourceService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HealingMindset.Core\\Interfaces\\IVideoResourceService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Core\\Context\\VideoResourceDatabaseContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\HealingMindset.Core\\Context\\VideoResourceDatabaseContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78284F74-981C-438A-BE4F-33306C5AAC84}|src\\HealingMindset.Api\\HealingMindset.Api.csproj|c:\\users\\matthew\\source\\healingmindset.web\\src\\healingmindset.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{78284F74-981C-438A-BE4F-33306C5AAC84}|src\\HealingMindset.Api\\HealingMindset.Api.csproj|solutionrelative:src\\healingmindset.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -56,32 +28,19 @@
         },
         {
           "DockedWidth": 346,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IVideoResourceService.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Repositories\\Interfaces\\IVideoResourceService.cs",
-              "RelativeDocumentMoniker": "src\\HealingMindset.Repositories\\Interfaces\\IVideoResourceService.cs",
-              "ToolTip": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Repositories\\Interfaces\\IVideoResourceService.cs",
-              "RelativeToolTip": "src\\HealingMindset.Repositories\\Interfaces\\IVideoResourceService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T20:40:48.739Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "VideoResourceRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Repositories\\Repositories\\VideoResourceRepository.cs",
-              "RelativeDocumentMoniker": "src\\HealingMindset.Repositories\\Repositories\\VideoResourceRepository.cs",
-              "ToolTip": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Repositories\\Repositories\\VideoResourceRepository.cs",
-              "RelativeToolTip": "src\\HealingMindset.Repositories\\Repositories\\VideoResourceRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T20:40:03.271Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.API\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\HealingMindset.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.API\\appsettings.json",
+              "RelativeToolTip": "src\\HealingMindset.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-21T21:52:56.457Z",
               "EditorCaption": ""
             },
             {
@@ -92,82 +51,10 @@
               "RelativeDocumentMoniker": "src\\HealingMindset.API\\Program.cs",
               "ToolTip": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.API\\Program.cs",
               "RelativeToolTip": "src\\HealingMindset.API\\Program.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAiwC4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T20:35:42.347Z",
+              "WhenOpened": "2026-05-21T21:07:51.829Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MockVideoService.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Repositories\\Repositories\\MockVideoService.cs",
-              "RelativeDocumentMoniker": "src\\HealingMindset.Repositories\\Repositories\\MockVideoService.cs",
-              "ToolTip": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Repositories\\Repositories\\MockVideoService.cs",
-              "RelativeToolTip": "src\\HealingMindset.Repositories\\Repositories\\MockVideoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T20:33:36.664Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BaseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Core\\Shared\\BaseRepository.cs",
-              "RelativeDocumentMoniker": "src\\HealingMindset.Core\\Shared\\BaseRepository.cs",
-              "ToolTip": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Core\\Shared\\BaseRepository.cs",
-              "RelativeToolTip": "src\\HealingMindset.Core\\Shared\\BaseRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T20:13:05.03Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "VideoResourceRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Core\\Repositories\\VideoResourceRepository.cs",
-              "RelativeDocumentMoniker": "src\\HealingMindset.Core\\Repositories\\VideoResourceRepository.cs",
-              "ToolTip": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Core\\Repositories\\VideoResourceRepository.cs",
-              "RelativeToolTip": "src\\HealingMindset.Core\\Repositories\\VideoResourceRepository.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T20:13:02.678Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "VideoResourceModel.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Core\\Models\\VideoResourceModel.cs",
-              "RelativeDocumentMoniker": "src\\HealingMindset.Core\\Models\\VideoResourceModel.cs",
-              "ToolTip": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Core\\Models\\VideoResourceModel.cs",
-              "RelativeToolTip": "src\\HealingMindset.Core\\Models\\VideoResourceModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T20:13:00.439Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IVideoResourceService.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Core\\Interfaces\\IVideoResourceService.cs",
-              "RelativeDocumentMoniker": "src\\HealingMindset.Core\\Interfaces\\IVideoResourceService.cs",
-              "ToolTip": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Core\\Interfaces\\IVideoResourceService.cs",
-              "RelativeToolTip": "src\\HealingMindset.Core\\Interfaces\\IVideoResourceService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T20:12:57.267Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "VideoResourceDatabaseContext.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Core\\Context\\VideoResourceDatabaseContext.cs",
-              "RelativeDocumentMoniker": "src\\HealingMindset.Core\\Context\\VideoResourceDatabaseContext.cs",
-              "ToolTip": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Core\\Context\\VideoResourceDatabaseContext.cs",
-              "RelativeToolTip": "src\\HealingMindset.Core\\Context\\VideoResourceDatabaseContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T20:59:13.032Z"
             }
           ]
         }
