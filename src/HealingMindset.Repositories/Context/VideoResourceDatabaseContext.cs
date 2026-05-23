@@ -19,7 +19,7 @@ namespace HealingMindset.Repositories.Context
         {
             modelBuilder.Entity<VideoResourceModel>(entity =>
             {
-                entity.HasKey(e => e.VideoId);
+                entity.HasKey(e => e.VideoResourceId);
 
                 entity.Property(e => e.Title).HasMaxLength(200);
                 entity.Property(e => e.YoutubeId).HasMaxLength(20);

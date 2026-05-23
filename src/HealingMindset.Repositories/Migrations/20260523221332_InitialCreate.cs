@@ -15,7 +15,7 @@ namespace HealingMindset.Repositories.Migrations
                 name: "VideoResources",
                 columns: table => new
                 {
-                    VideoId = table.Column<int>(type: "integer", nullable: false)
+                    VideoResourceId = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Title = table.Column<string>(type: "character varying(200)", maxLength: 200, nullable: false),
                     YoutubeId = table.Column<string>(type: "character varying(20)", maxLength: 20, nullable: false),
@@ -23,7 +23,7 @@ namespace HealingMindset.Repositories.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_VideoResources", x => x.VideoId);
+                    table.PrimaryKey("PK_VideoResources", x => x.VideoResourceId);
                 });
         }
 

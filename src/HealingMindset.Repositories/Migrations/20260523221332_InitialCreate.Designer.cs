@@ -11,7 +11,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace HealingMindset.Repositories.Migrations
 {
     [DbContext(typeof(VideoResourceDatabaseContext))]
-    [Migration("20260521220848_InitialCreate")]
+    [Migration("20260523221332_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -26,11 +26,11 @@ namespace HealingMindset.Repositories.Migrations
 
             modelBuilder.Entity("HealingMindset.Repositories.Models.VideoResourceModel", b =>
                 {
-                    b.Property<int>("VideoId")
+                    b.Property<int>("VideoResourceId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("VideoId"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("VideoResourceId"));
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -47,7 +47,7 @@ namespace HealingMindset.Repositories.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("character varying(20)");
 
-                    b.HasKey("VideoId");
+                    b.HasKey("VideoResourceId");
 
                     b.ToTable("VideoResources");
                 });
