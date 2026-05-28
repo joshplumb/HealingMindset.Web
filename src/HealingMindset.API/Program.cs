@@ -1,3 +1,4 @@
+using HealingMindset.Api.Endpoints;
 using HealingMindset.Repositories.Context;
 using HealingMindset.Repositories.Interfaces;
 using HealingMindset.Repositories.Models;
@@ -28,7 +29,7 @@ builder.Services.AddCors(options =>
 });
 
 var app = builder.Build();
-
+ 
 app.UseCors();
 
 // Configure the HTTP request pipeline.
@@ -39,16 +40,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-app.MapPost("/api/videos", async (VideoResourceModel videoResource, IVideoResourceService videoService) => 
-    await videoService.Create(videoResource));
-app.MapGet("/api/videos", async (IVideoResourceService videoService) => 
-    await videoService.GetAll());
-app.MapGet("/api/videos/{videoResourceId:int}", async (int videoResourceId, IVideoResourceService videoService) => 
-    await videoService.GetByID(videoResourceId));
-app.MapPut("/api/videos", async (VideoResourceModel videoResource, IVideoResourceService videoService) => 
-    await videoService.Update(videoResource));
-app.MapDelete("/api/videos/{videoResourceId:int}", async (int videoResourceId, IVideoResourceService videoService) => 
-    await videoService.Delete(videoResourceId));
+app.MapVideoEndpoints();
 
 app.Run();
