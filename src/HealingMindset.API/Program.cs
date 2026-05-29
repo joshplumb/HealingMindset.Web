@@ -1,8 +1,7 @@
+using FluentValidation;
 using HealingMindset.Api.Endpoints;
 using HealingMindset.Repositories.Context;
 using HealingMindset.Repositories.Interfaces;
-using HealingMindset.Repositories.Models;
-using HealingMindset.Repositories.Repositories;
 using HealingMindset.Repositories.Services;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,6 +15,7 @@ builder.Services.AddDbContext<VideoResourceDatabaseContext>(options =>
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddValidatorsFromAssemblyContaining<Program>();
 
 
 builder.Services.AddCors(options =>

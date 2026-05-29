@@ -1,5 +1,6 @@
 ﻿using HealingMindset.Repositories.Interfaces;
 using HealingMindset.Repositories.Models;
+using HealingMindset.Api.DTOs;
 
 namespace HealingMindset.Api.Endpoints
 {
@@ -12,13 +13,20 @@ namespace HealingMindset.Api.Endpoints
             videoResourceGroup.MapPost("/", CreateVideo);
             videoResourceGroup.MapGet("/", GetAllVideos);
             videoResourceGroup.MapGet("/{videoResourceId:int}", GetVideoByID);
-            videoResourceGroup.MapPut("/", UpdateVideo);
+            videoResourceGroup.MapPut("/{videoResourceId:int}", UpdateVideo);
             videoResourceGroup.MapDelete("/{videoResourceId:int}", DeleteVideo);
         }
-        public static async Task<IResult> CreateVideo(VideoResourceModel videoResource,IVideoResourceService videoService)
+        public static async Task<IResult> CreateVideo(VideoRequestDTO videoRequest, IVideoResourceService videoService)
         {
-            await videoService.Create(videoResource);
-            return TypedResults.Created($"/api/videos", videoResource);
+            var databaseModel = new VideoResourceModel
+            {
+                Title = videoRequest.Title,
+                YoutubeId = videoRequest.YoutubeId,
+                Description = videoRequest.Description
+            };
+
+            await videoService.Create(databaseModel);
+            return TypedResults.Created($"/api/videos", databaseModel);
         }
         public static async Task<IResult> GetAllVideos(IVideoResourceService videoService)
         {
@@ -30,9 +38,17 @@ namespace HealingMindset.Api.Endpoints
             var video = await videoService.GetByID(videoResourceId);
             return video is null ? TypedResults.NotFound() : TypedResults.Ok(video);
         }
-        public static async Task<IResult> UpdateVideo(VideoResourceModel videoResource, IVideoResourceService videoService)
+        public static async Task<IResult> UpdateVideo(int videoId, VideoRequestDTO videoRequest, IVideoResourceService videoService)
         {
-            var video = await videoService.Update(videoResource);
+            var databaseModel = new VideoResourceModel
+            {
+                VideoResourceId = videoId,
+                Title = videoRequest.Title,
+                YoutubeId = videoRequest.YoutubeId,
+                Description = videoRequest.Description
+            };
+
+            var video = await videoService.Update(databaseModel);
             return TypedResults.NoContent();
         }
         public static async Task<IResult> DeleteVideo(int videoResourceId, IVideoResourceService videoService)
