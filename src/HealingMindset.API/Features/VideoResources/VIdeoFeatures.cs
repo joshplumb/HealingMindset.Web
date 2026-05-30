@@ -6,5 +6,6 @@ public static class VideoFeatures
     {
         CreateVideoFeature.MapEndpoint(app);
         UpdateVideoFeature.MapEndpoint(app);
+        GetAllVideoFeature.MapEndpoint(app);
     }
 }

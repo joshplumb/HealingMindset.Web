@@ -2,7 +2,7 @@
 using HealingMindset.Repositories.Interfaces;
 using HealingMindset.Repositories.Models;
 
-namespace HealingMindset.Api.Features.VideoResources
+namespace HealingMindset.Api.Features.VideoResources;
 
 public record CreateVideoRequest(string Title, string YoutubeId, string Description);
 
@@ -34,3 +34,4 @@ public static class CreateVideoFeature
         });
     }
 }
+
