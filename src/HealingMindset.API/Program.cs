@@ -1,5 +1,6 @@
 using FluentValidation;
 using HealingMindset.Api.Endpoints;
+using HealingMindset.Api.Features.Videos;
 using HealingMindset.Repositories.Context;
 using HealingMindset.Repositories.Interfaces;
 using HealingMindset.Repositories.Services;
@@ -40,6 +41,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.MapVideoEndpoints();
+app.MapVideos();
 
 app.Run();
