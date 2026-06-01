@@ -135,3 +135,5 @@ C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.API\bin\Debug\net9
 C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.API\bin\Debug\net9.0\HealingMindset.Repositories.pdb
 C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.API\obj\Debug\net9.0\HealingMindset.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\bin\Debug\net9.0\FluentValidation.dll
+C:\Users\Matthew\source\HealingMindset.Web\src\HealingMindset.Api\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll

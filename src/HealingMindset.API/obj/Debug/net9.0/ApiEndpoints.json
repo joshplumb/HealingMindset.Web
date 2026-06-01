@@ -1,15 +1,15 @@
 [
   {
-    "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_2",
-    "RelativePath": "api/videos",
+    "ContainingType": "HealingMindset.Api.Features.VideoResources.CreateVideoFeature",
+    "Method": "HandleCreateVideoResource",
+    "RelativePath": "api/videos/",
     "HttpMethod": "POST",
     "IsController": false,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "videoResource",
-        "Type": "HealingMindset.Repositories.Models.VideoResourceModel",
+        "Name": "request",
+        "Type": "HealingMindset.Api.Features.VideoResources.CreateVideoRequest",
         "IsRequired": true
       }
     ],
@@ -19,14 +19,22 @@
         "MediaTypes": [
           "application/json"
         ],
-        "StatusCode": 200
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Http.HttpValidationProblemDetails",
+        "MediaTypes": [
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
       }
-    ]
+    ],
+    "Summary": "Create new video"
   },
   {
-    "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_3",
-    "RelativePath": "api/videos",
+    "ContainingType": "HealingMindset.Api.Features.VideoResources.GetAllVideoFeature\u002B\u003C\u003Ec",
+    "Method": "\u003CMapEndpoint\u003Eb__0_0",
+    "RelativePath": "api/videos/",
     "HttpMethod": "GET",
     "IsController": false,
     "Order": 0,
@@ -39,60 +47,13 @@
         ],
         "StatusCode": 200
       }
-    ]
-  },
-  {
-    "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_5",
-    "RelativePath": "api/videos",
-    "HttpMethod": "PUT",
-    "IsController": false,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "videoResource",
-        "Type": "HealingMindset.Repositories.Models.VideoResourceModel",
-        "IsRequired": true
-      }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "HealingMindset.Repositories.Models.VideoResourceModel",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "Summary": "Get all video"
   },
   {
-    "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_4",
-    "RelativePath": "api/videos/{videoResourceId:int}",
-    "HttpMethod": "GET",
-    "IsController": false,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "videoResourceId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "HealingMindset.Repositories.Models.VideoResourceModel",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_6",
-    "RelativePath": "api/videos/{videoResourceId:int}",
+    "ContainingType": "HealingMindset.Api.Features.VideoResources.DeleteVideoFeature\u002B\u003C\u003Ec",
+    "Method": "\u003CMapEndpoint\u003Eb__0_0",
+    "RelativePath": "api/videos/{id:int}",
     "HttpMethod": "DELETE",
     "IsController": false,
     "Order": 0,
@@ -105,12 +66,76 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Boolean",
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 204
+      }
+    ],
+    "Summary": "Delete a video"
+  },
+  {
+    "ContainingType": "HealingMindset.Api.Features.VideoResources.GetByIdVideoFeature",
+    "Method": "HandleGetByIdAsync",
+    "RelativePath": "api/videos/{id:int}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HealingMindset.Api.Features.VideoResources.GetByIdResponse",
         "MediaTypes": [
           "application/json"
         ],
         "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
       }
-    ]
+    ],
+    "Summary": "Get a single video"
+  },
+  {
+    "ContainingType": "HealingMindset.Api.Features.VideoResources.UpdateVideoFeature\u002B\u003C\u003Ec",
+    "Method": "\u003CMapEndpoint\u003Eb__0_0",
+    "RelativePath": "api/videos/{id:int}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "HealingMindset.Api.Features.VideoResources.UpdateVideoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 204
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Http.HttpValidationProblemDetails",
+        "MediaTypes": [
+          "application/problem\u002Bjson"
+        ],
+        "StatusCode": 400
+      }
+    ],
+    "Summary": "Update a video"
   }
 ]

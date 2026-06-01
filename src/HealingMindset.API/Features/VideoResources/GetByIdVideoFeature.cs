@@ -1,18 +1,24 @@
 ﻿using HealingMindset.Repositories.Interfaces;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace HealingMindset.Api.Features.VideoResources;
+
+public record GetByIdResponse(string Title, string YoutubeId, string Description);
 public static class GetByIdVideoFeature
 {
     public static void MapEndpoint(IEndpointRouteBuilder app)
     {
-        app.MapGet("/{videoResourceId:int}", async (int videoResourceId, IVideoResourceService videoService) =>
+        app.MapGet("/{id:int}", HandleGetByIdAsync)
+            .WithSummary("Get a single video");
+    }
+    public static async Task<Results<Ok<GetByIdResponse>, NotFound>> HandleGetByIdAsync(int id, IVideoResourceService videoService)
+    {
+        var video = await videoService.GetByID(id);
+        if (video == null)
         {
-            var video = await videoService.GetByID(videoResourceId);
-            if (video == null)
-            {
-                return TypedResults.NotFound();
-            }
-            return TypedResults.Ok(video);
-        });
+            return TypedResults.NotFound();
+        }
+        var response = new GetByIdResponse(video.Title, video.YoutubeId, video.Description);
+        return TypedResults.Ok(response);
     }
 }

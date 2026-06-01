@@ -6,10 +6,11 @@ public static class DeleteVideoFeature
 {
     public static void MapEndpoint(IEndpointRouteBuilder app)
     {
-        app.MapDelete("/{videoResourceId:int}", async (int videoResourceId, IVideoResourceService videoService) =>
+        app.MapDelete("/{id:int}", async (int videoResourceId, IVideoResourceService videoService) =>
         {
             await videoService.Delete(videoResourceId);
             return TypedResults.NoContent();
-        });
+        })
+            .WithSummary("Delete a video");
     }
 }

@@ -8,25 +8,36 @@
     "/api/videos": {
       "post": {
         "tags": [
-          "HealingMindset.Api"
+          "CreateVideoFeature"
         ],
+        "summary": "Create new video",
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/VideoResourceModel"
+                "$ref": "#/components/schemas/CreateVideoRequest"
               }
             }
           },
           "required": true
         },
         "responses": {
-          "200": {
-            "description": "OK",
+          "201": {
+            "description": "Created",
             "content": {
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/VideoResourceModel"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HttpValidationProblemDetails"
                 }
               }
             }
@@ -37,6 +48,7 @@
         "tags": [
           "HealingMindset.Api"
         ],
+        "summary": "Get all video",
         "responses": {
           "200": {
             "description": "OK",
@@ -52,43 +64,17 @@
             }
           }
         }
-      },
-      "put": {
-        "tags": [
-          "HealingMindset.Api"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/VideoResourceModel"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/VideoResourceModel"
-                }
-              }
-            }
-          }
-        }
       }
     },
-    "/api/videos/{videoResourceId}": {
+    "/api/videos/{id}": {
       "get": {
         "tags": [
-          "HealingMindset.Api"
+          "GetByIdVideoFeature"
         ],
+        "summary": "Get a single video",
         "parameters": [
           {
-            "name": "videoResourceId",
+            "name": "id",
             "in": "path",
             "required": true,
             "schema": {
@@ -103,10 +89,13 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/VideoResourceModel"
+                  "$ref": "#/components/schemas/GetByIdResponse"
                 }
               }
             }
+          },
+          "404": {
+            "description": "Not Found"
           }
         }
       },
@@ -114,10 +103,11 @@
         "tags": [
           "HealingMindset.Api"
         ],
+        "summary": "Delete a video",
         "parameters": [
           {
             "name": "videoResourceId",
-            "in": "path",
+            "in": "query",
             "required": true,
             "schema": {
               "type": "integer",
@@ -126,12 +116,47 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "OK",
+          "204": {
+            "description": "No Content"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "HealingMindset.Api"
+        ],
+        "summary": "Update a video",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateVideoRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request",
             "content": {
-              "application/json": {
+              "application/problem+json": {
                 "schema": {
-                  "type": "boolean"
+                  "$ref": "#/components/schemas/HttpValidationProblemDetails"
                 }
               }
             }
@@ -142,6 +167,97 @@
   },
   "components": {
     "schemas": {
+      "CreateVideoRequest": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "youtubeId": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetByIdResponse": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "youtubeId": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "HttpValidationProblemDetails": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "detail": {
+            "type": "string",
+            "nullable": true
+          },
+          "instance": {
+            "type": "string",
+            "nullable": true
+          },
+          "errors": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": { }
+      },
+      "UpdateVideoRequest": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "youtubeId": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "VideoResourceModel": {
         "type": "object",
         "properties": {
@@ -168,7 +284,13 @@
   },
   "tags": [
     {
+      "name": "CreateVideoFeature"
+    },
+    {
       "name": "HealingMindset.Api"
+    },
+    {
+      "name": "GetByIdVideoFeature"
     }
   ]
 }

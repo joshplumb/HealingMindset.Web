@@ -7,28 +7,28 @@
       "RelativeMoniker": "D:0:0:{78284F74-981C-438A-BE4F-33306C5AAC84}|src\\HealingMindset.Api\\HealingMindset.Api.csproj|solutionrelative:src\\healingmindset.api\\features\\videoresources\\videofeatures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78284F74-981C-438A-BE4F-33306C5AAC84}|src\\HealingMindset.Api\\HealingMindset.Api.csproj|c:\\users\\matthew\\source\\healingmindset.web\\src\\healingmindset.api\\features\\videoresources\\createvideofeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78284F74-981C-438A-BE4F-33306C5AAC84}|src\\HealingMindset.Api\\HealingMindset.Api.csproj|solutionrelative:src\\healingmindset.api\\features\\videoresources\\createvideofeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78284F74-981C-438A-BE4F-33306C5AAC84}|src\\HealingMindset.Api\\HealingMindset.Api.csproj|c:\\users\\matthew\\source\\healingmindset.web\\src\\healingmindset.api\\features\\videoresources\\getallvideofeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78284F74-981C-438A-BE4F-33306C5AAC84}|src\\HealingMindset.Api\\HealingMindset.Api.csproj|solutionrelative:src\\healingmindset.api\\features\\videoresources\\getallvideofeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{78284F74-981C-438A-BE4F-33306C5AAC84}|src\\HealingMindset.Api\\HealingMindset.Api.csproj|c:\\users\\matthew\\source\\healingmindset.web\\src\\healingmindset.api\\features\\videoresources\\deletevideofeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{78284F74-981C-438A-BE4F-33306C5AAC84}|src\\HealingMindset.Api\\HealingMindset.Api.csproj|solutionrelative:src\\healingmindset.api\\features\\videoresources\\deletevideofeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78284F74-981C-438A-BE4F-33306C5AAC84}|src\\HealingMindset.Api\\HealingMindset.Api.csproj|c:\\users\\matthew\\source\\healingmindset.web\\src\\healingmindset.api\\features\\videoresources\\getallvideofeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78284F74-981C-438A-BE4F-33306C5AAC84}|src\\HealingMindset.Api\\HealingMindset.Api.csproj|solutionrelative:src\\healingmindset.api\\features\\videoresources\\getallvideofeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78284F74-981C-438A-BE4F-33306C5AAC84}|src\\HealingMindset.Api\\HealingMindset.Api.csproj|c:\\users\\matthew\\source\\healingmindset.web\\src\\healingmindset.api\\features\\videoresources\\getbyidvideofeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78284F74-981C-438A-BE4F-33306C5AAC84}|src\\HealingMindset.Api\\HealingMindset.Api.csproj|solutionrelative:src\\healingmindset.api\\features\\videoresources\\getbyidvideofeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78284F74-981C-438A-BE4F-33306C5AAC84}|src\\HealingMindset.Api\\HealingMindset.Api.csproj|c:\\users\\matthew\\source\\healingmindset.web\\src\\healingmindset.api\\features\\videoresources\\createvideofeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78284F74-981C-438A-BE4F-33306C5AAC84}|src\\HealingMindset.Api\\HealingMindset.Api.csproj|solutionrelative:src\\healingmindset.api\\features\\videoresources\\createvideofeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{78284F74-981C-438A-BE4F-33306C5AAC84}|src\\HealingMindset.Api\\HealingMindset.Api.csproj|c:\\users\\matthew\\source\\healingmindset.web\\src\\healingmindset.api\\features\\videoresources\\updatevideofeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{78284F74-981C-438A-BE4F-33306C5AAC84}|src\\HealingMindset.Api\\HealingMindset.Api.csproj|solutionrelative:src\\healingmindset.api\\features\\videoresources\\updatevideofeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78284F74-981C-438A-BE4F-33306C5AAC84}|src\\HealingMindset.Api\\HealingMindset.Api.csproj|c:\\users\\matthew\\source\\healingmindset.web\\src\\healingmindset.api\\endpoints\\videoresourceendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78284F74-981C-438A-BE4F-33306C5AAC84}|src\\HealingMindset.Api\\HealingMindset.Api.csproj|solutionrelative:src\\healingmindset.api\\endpoints\\videoresourceendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78284F74-981C-438A-BE4F-33306C5AAC84}|src\\HealingMindset.Api\\HealingMindset.Api.csproj|c:\\users\\matthew\\source\\healingmindset.web\\src\\healingmindset.api\\filters\\validationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78284F74-981C-438A-BE4F-33306C5AAC84}|src\\HealingMindset.Api\\HealingMindset.Api.csproj|solutionrelative:src\\healingmindset.api\\filters\\validationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78284F74-981C-438A-BE4F-33306C5AAC84}|src\\HealingMindset.Api\\HealingMindset.Api.csproj|c:\\users\\matthew\\source\\healingmindset.web\\src\\healingmindset.api\\features\\videoresources\\getbyidvideofeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78284F74-981C-438A-BE4F-33306C5AAC84}|src\\HealingMindset.Api\\HealingMindset.Api.csproj|solutionrelative:src\\healingmindset.api\\features\\videoresources\\getbyidvideofeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{78284F74-981C-438A-BE4F-33306C5AAC84}|src\\HealingMindset.Api\\HealingMindset.Api.csproj|c:\\users\\matthew\\source\\healingmindset.web\\src\\healingmindset.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,9 +51,35 @@
           ]
         },
         {
-          "DockedWidth": 341,
+          "DockedWidth": 633,
           "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GetAllVideoFeature.cs",
+              "DocumentMoniker": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.API\\Features\\VideoResources\\GetAllVideoFeature.cs",
+              "RelativeDocumentMoniker": "src\\HealingMindset.API\\Features\\VideoResources\\GetAllVideoFeature.cs",
+              "ToolTip": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.API\\Features\\VideoResources\\GetAllVideoFeature.cs",
+              "RelativeToolTip": "src\\HealingMindset.API\\Features\\VideoResources\\GetAllVideoFeature.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T21:18:19.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UpdateVideoFeature.cs",
+              "DocumentMoniker": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.API\\Features\\VideoResources\\UpdateVideoFeature.cs",
+              "RelativeDocumentMoniker": "src\\HealingMindset.API\\Features\\VideoResources\\UpdateVideoFeature.cs",
+              "ToolTip": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.API\\Features\\VideoResources\\UpdateVideoFeature.cs",
+              "RelativeToolTip": "src\\HealingMindset.API\\Features\\VideoResources\\UpdateVideoFeature.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T16:55:09.145Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -62,48 +88,22 @@
               "RelativeDocumentMoniker": "src\\HealingMindset.API\\Features\\VideoResources\\DeleteVideoFeature.cs",
               "ToolTip": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.API\\Features\\VideoResources\\DeleteVideoFeature.cs",
               "RelativeToolTip": "src\\HealingMindset.API\\Features\\VideoResources\\DeleteVideoFeature.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-30T13:58:32.918Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "GetByIdVideoFeature.cs",
               "DocumentMoniker": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.API\\Features\\VideoResources\\GetByIdVideoFeature.cs",
               "RelativeDocumentMoniker": "src\\HealingMindset.API\\Features\\VideoResources\\GetByIdVideoFeature.cs",
               "ToolTip": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.API\\Features\\VideoResources\\GetByIdVideoFeature.cs",
               "RelativeToolTip": "src\\HealingMindset.API\\Features\\VideoResources\\GetByIdVideoFeature.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-30T12:55:29.525Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GetAllVideoFeature.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.API\\Features\\VideoResources\\GetAllVideoFeature.cs",
-              "RelativeDocumentMoniker": "src\\HealingMindset.API\\Features\\VideoResources\\GetAllVideoFeature.cs",
-              "ToolTip": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.API\\Features\\VideoResources\\GetAllVideoFeature.cs",
-              "RelativeToolTip": "src\\HealingMindset.API\\Features\\VideoResources\\GetAllVideoFeature.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T00:04:07.783Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UpdateVideoFeature.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.API\\Features\\VideoResources\\UpdateVideoFeature.cs",
-              "RelativeDocumentMoniker": "src\\HealingMindset.API\\Features\\VideoResources\\UpdateVideoFeature.cs",
-              "ToolTip": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.API\\Features\\VideoResources\\UpdateVideoFeature.cs",
-              "RelativeToolTip": "src\\HealingMindset.API\\Features\\VideoResources\\UpdateVideoFeature.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T23:26:24.949Z",
               "EditorCaption": ""
             },
             {
@@ -114,47 +114,48 @@
               "RelativeDocumentMoniker": "src\\HealingMindset.API\\Program.cs",
               "ToolTip": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.API\\Program.cs",
               "RelativeToolTip": "src\\HealingMindset.API\\Program.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAACsAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T23:25:04.55Z"
+              "WhenOpened": "2026-05-29T23:25:04.55Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "VideoFeatures.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Api\\Features\\VideoResources\\VideoFeatures.cs",
-              "RelativeDocumentMoniker": "src\\HealingMindset.Api\\Features\\VideoResources\\VideoFeatures.cs",
-              "ToolTip": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.Api\\Features\\VideoResources\\VideoFeatures.cs",
-              "RelativeToolTip": "src\\HealingMindset.Api\\Features\\VideoResources\\VideoFeatures.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.API\\Features\\VideoResources\\VideoFeatures.cs",
+              "RelativeDocumentMoniker": "src\\HealingMindset.API\\Features\\VideoResources\\VideoFeatures.cs",
+              "ToolTip": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.API\\Features\\VideoResources\\VideoFeatures.cs",
+              "RelativeToolTip": "src\\HealingMindset.API\\Features\\VideoResources\\VideoFeatures.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-29T23:24:40.426Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "CreateVideoFeature.cs",
               "DocumentMoniker": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.API\\Features\\VideoResources\\CreateVideoFeature.cs",
               "RelativeDocumentMoniker": "src\\HealingMindset.API\\Features\\VideoResources\\CreateVideoFeature.cs",
               "ToolTip": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.API\\Features\\VideoResources\\CreateVideoFeature.cs",
               "RelativeToolTip": "src\\HealingMindset.API\\Features\\VideoResources\\CreateVideoFeature.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAowAsAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAgwBgAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-29T19:17:15.281Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "VideoResourceEndpoints.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.API\\Endpoints\\VideoResourceEndpoints.cs",
-              "RelativeDocumentMoniker": "src\\HealingMindset.API\\Endpoints\\VideoResourceEndpoints.cs",
-              "ToolTip": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.API\\Endpoints\\VideoResourceEndpoints.cs",
-              "RelativeToolTip": "src\\HealingMindset.API\\Endpoints\\VideoResourceEndpoints.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABQAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "ValidationFilter.cs",
+              "DocumentMoniker": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.API\\Filters\\ValidationFilter.cs",
+              "RelativeDocumentMoniker": "src\\HealingMindset.API\\Filters\\ValidationFilter.cs",
+              "ToolTip": "C:\\Users\\Matthew\\source\\HealingMindset.Web\\src\\HealingMindset.API\\Filters\\ValidationFilter.cs",
+              "RelativeToolTip": "src\\HealingMindset.API\\Filters\\ValidationFilter.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwBwAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T13:11:01.717Z",
+              "WhenOpened": "2026-06-01T21:23:19.695Z",
               "EditorCaption": ""
             }
           ]

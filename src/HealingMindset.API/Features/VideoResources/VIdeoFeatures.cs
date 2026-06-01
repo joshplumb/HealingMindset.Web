@@ -2,10 +2,14 @@
 
 public static class VideoFeatures
 {
-    public static void MapVideos(this IEndpointRouteBuilder app)
+    public static void MapVideoEndpoints(this IEndpointRouteBuilder app)
     {
-        CreateVideoFeature.MapEndpoint(app);
-        UpdateVideoFeature.MapEndpoint(app);
-        GetAllVideoFeature.MapEndpoint(app);
+        var videoGroup = app.MapGroup("/api/videos");
+
+        CreateVideoFeature.MapEndpoint(videoGroup);
+        DeleteVideoFeature.MapEndpoint(videoGroup);
+        GetAllVideoFeature.MapEndpoint(videoGroup);
+        GetByIdVideoFeature.MapEndpoint(videoGroup);
+        UpdateVideoFeature.MapEndpoint(videoGroup);
     }
 }

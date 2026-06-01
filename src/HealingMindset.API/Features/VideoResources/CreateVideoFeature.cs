@@ -1,11 +1,12 @@
 ﻿using FluentValidation;
+using HealingMindset.Api.Filters;
 using HealingMindset.Repositories.Interfaces;
 using HealingMindset.Repositories.Models;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace HealingMindset.Api.Features.VideoResources;
 
 public record CreateVideoRequest(string Title, string YoutubeId, string Description);
-
 public class CreateVideoValidator : AbstractValidator<CreateVideoRequest>
 {
     public CreateVideoValidator()
@@ -15,23 +16,24 @@ public class CreateVideoValidator : AbstractValidator<CreateVideoRequest>
         RuleFor(x => x.Description).NotEmpty();
     }
 }
-
 public static class CreateVideoFeature
 {
     public static void MapEndpoint(IEndpointRouteBuilder app)
     {
-        app.MapPost("/api/videos", async (CreateVideoRequest request, IVideoResourceService videoService) =>
+        app.MapPost("/", HandleCreateVideoResource)
+           .WithSummary("Create new video")
+           .WithRequestValidation<CreateVideoRequest>();
+    }
+    public static async Task<Results<Created<VideoResourceModel>, BadRequest>> HandleCreateVideoResource(CreateVideoRequest request, IVideoResourceService videoService)
+    {
+        var databaseModel = new VideoResourceModel
         {
-            var databaseModel = new VideoResourceModel
-            {
-                Title = request.Title,
-                YoutubeId = request.YoutubeId,
-                Description = request.Description
-            };
+            Title = request.Title,
+            YoutubeId = request.YoutubeId,
+            Description = request.Description
+        };
 
-            await videoService.Create(databaseModel);
-            return TypedResults.Created($"/api/videos", databaseModel);
-        });
+        await videoService.Create(databaseModel);
+        return TypedResults.Created($"/api/videos", databaseModel);
     }
 }
-
