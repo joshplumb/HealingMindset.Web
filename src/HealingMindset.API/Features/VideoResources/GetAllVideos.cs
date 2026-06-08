@@ -1,7 +1,7 @@
 ﻿using HealingMindset.Repositories.Interfaces;
 
 namespace HealingMindset.Api.Features.VideoResources;
-public static class GetAllVideoFeature
+public static class GetAllVideos
 {
     public static void MapEndpoint(IEndpointRouteBuilder app)
     {

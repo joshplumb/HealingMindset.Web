@@ -2,7 +2,7 @@
 
 namespace HealingMindset.Api.Features.VideoResources;
 
-public static class DeleteVideoFeature
+public static class DeleteVideo
 {
     public static void MapEndpoint(IEndpointRouteBuilder app)
     {
@@ -11,6 +11,7 @@ public static class DeleteVideoFeature
             await videoService.Delete(videoResourceId);
             return TypedResults.NoContent();
         })
-            .WithSummary("Delete a video");
+            .WithSummary("Delete a video")
+            .RequireAuthorization();
     }
 }

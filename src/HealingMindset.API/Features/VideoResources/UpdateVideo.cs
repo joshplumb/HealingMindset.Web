@@ -14,7 +14,7 @@ public class UpdateVideoValidator : AbstractValidator<UpdateVideoRequest>
         RuleFor(x => x.Description).NotEmpty();
     }
 }
-public static class UpdateVideoFeature
+public static class UpdateVideo
 {
     public static void MapEndpoint(IEndpointRouteBuilder app)
     {
@@ -31,6 +31,7 @@ public static class UpdateVideoFeature
             return TypedResults.NoContent();
         })
             .WithSummary("Update a video")
-            .WithRequestValidation<UpdateVideoRequest>();
+            .WithRequestValidation<UpdateVideoRequest>()
+            .RequireAuthorization();
     }
 }

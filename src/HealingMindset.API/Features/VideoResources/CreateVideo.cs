@@ -16,13 +16,14 @@ public class CreateVideoValidator : AbstractValidator<CreateVideoRequest>
         RuleFor(x => x.Description).NotEmpty();
     }
 }
-public static class CreateVideoFeature
+public static class CreateVideo
 {
     public static void MapEndpoint(IEndpointRouteBuilder app)
     {
         app.MapPost("/", HandleCreateVideoResource)
            .WithSummary("Create new video")
-           .WithRequestValidation<CreateVideoRequest>();
+           .WithRequestValidation<CreateVideoRequest>()
+           .RequireAuthorization();
     }
     public static async Task<Results<Created<VideoResourceModel>, BadRequest>> HandleCreateVideoResource(CreateVideoRequest request, IVideoResourceService videoService)
     {

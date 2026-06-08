@@ -48,7 +48,7 @@ namespace HealingMindset.Repositories.Repositories
         {
             var foundVideoResource = await _context.VideoResources.FindAsync(videoResourceID);
 
-            if(foundVideoResource != null) 
+            if(foundVideoResource == null) 
                 throw new Exception("ID not found.");
 
             _context.VideoResources.Remove(foundVideoResource);

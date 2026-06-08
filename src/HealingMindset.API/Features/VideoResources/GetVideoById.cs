@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Http.HttpResults;
 namespace HealingMindset.Api.Features.VideoResources;
 
 public record GetByIdResponse(string Title, string YoutubeId, string Description);
-public static class GetByIdVideoFeature
+public static class GetVideoById
 {
     public static void MapEndpoint(IEndpointRouteBuilder app)
     {
