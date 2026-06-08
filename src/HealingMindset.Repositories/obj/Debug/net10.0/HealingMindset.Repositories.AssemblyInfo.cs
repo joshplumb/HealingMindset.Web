@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HealingMindset.Repositories")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10456edb77e6abc466a3de8852e304726abe0e13")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84de449730d4cf868eed8e563dad750b244b94c0")]
 [assembly: System.Reflection.AssemblyProductAttribute("HealingMindset.Repositories")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HealingMindset.Repositories")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

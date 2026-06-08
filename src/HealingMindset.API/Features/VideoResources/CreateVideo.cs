@@ -5,7 +5,6 @@ using HealingMindset.Repositories.Models;
 using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace HealingMindset.Api.Features.VideoResources;
-
 public record CreateVideoRequest(string Title, string YoutubeId, string Description);
 public class CreateVideoValidator : AbstractValidator<CreateVideoRequest>
 {
