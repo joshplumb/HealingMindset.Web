@@ -17,7 +17,8 @@ builder.Services.AddValidatorsFromAssemblyContaining<Program>();
 builder.Services.AddAuthorization();
 builder.Services.AddAuthentication().AddCookie(IdentityConstants.ApplicationScheme);
 
-builder.Services.AddIdentityCore<UserModel>();
+builder.Services.AddIdentityCore<UserModel>()
+    .AddEntityFrameworkStores<UserDatabaseContext>();
 
 builder.Services.AddScoped<IVideoResourceService, MockVideoService>();
 builder.Services.AddDbContext<VideoResourceDatabaseContext>(options =>
@@ -34,8 +35,6 @@ builder.Services.AddCors(options =>
 });
 
 var app = builder.Build();
- 
-app.UseCors();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -44,7 +43,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors();
 app.UseHttpsRedirection();
+app.UseAuthentication();
+app.UseAuthorization();
 app.MapVideoEndpoints();
 
 app.Run();

@@ -1,7 +1,9 @@
 ﻿using FluentValidation;
 using HealingMindset.Api.Filters;
+using HealingMindset.DataAccess.Context;
 using HealingMindset.DataAccess.Models;
 using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Identity;
 
 namespace HealingMindset.Api.Features.Users;
 public record RegisterUserRequest(string Username, string Email, string Password);
@@ -23,11 +25,13 @@ public static class RegisterUser
             .WithRequestValidation<RegisterUserRequest>();
     }
 
-    public static async Task<Results<Created<UserModel>, BadRequest> HandleRegisterUser(RegisterUserRequest request, )
+    public static async Task<Results<Created<UserModel>, BadRequest> HandleRegisterUser(RegisterUserRequest request, UserDatabaseContext context)
     {
         var databaseModel = new UserModel
         {
-
+            UserName = request.Username,
+            Email = request.Email,
         };
+        var result = await 
     }
 }
