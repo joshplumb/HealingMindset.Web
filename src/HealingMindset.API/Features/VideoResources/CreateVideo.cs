@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 using HealingMindset.Api.Filters;
-using HealingMindset.Repositories.Interfaces;
-using HealingMindset.Repositories.Models;
+using HealingMindset.DataAccess.Interfaces;
+using HealingMindset.DataAccess.Models;
 using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace HealingMindset.Api.Features.VideoResources;

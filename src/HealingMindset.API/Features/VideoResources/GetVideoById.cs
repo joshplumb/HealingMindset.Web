@@ -1,4 +1,4 @@
-﻿using HealingMindset.Repositories.Interfaces;
+﻿using HealingMindset.DataAccess.Interfaces;
 using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace HealingMindset.Api.Features.VideoResources;

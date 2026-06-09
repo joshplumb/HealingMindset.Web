@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HealingMindset.Repositories\HealingMindset.Repositories.csproj" />
+    <ProjectReference Include="..\HealingMindset.DataAccess\HealingMindset.DataAccess.csproj" />
   </ItemGroup>
 
 </Project>

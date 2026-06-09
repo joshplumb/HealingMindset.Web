@@ -1,7 +1,6 @@
 ﻿using FluentValidation;
 using HealingMindset.Api.Filters;
-using HealingMindset.Repositories.Interfaces;
-using HealingMindset.Repositories.Models;
+using HealingMindset.DataAccess.Models;
 using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace HealingMindset.Api.Features.Users;
@@ -26,6 +25,9 @@ public static class RegisterUser
 
     public static async Task<Results<Created<UserModel>, BadRequest> HandleRegisterUser(RegisterUserRequest request, )
     {
+        var databaseModel = new UserModel
+        {
 
+        };
     }
 }

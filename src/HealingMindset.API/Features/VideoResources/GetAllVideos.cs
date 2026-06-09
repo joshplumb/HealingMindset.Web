@@ -1,4 +1,4 @@
-﻿using HealingMindset.Repositories.Interfaces;
+﻿using HealingMindset.DataAccess.Interfaces;
 
 namespace HealingMindset.Api.Features.VideoResources;
 public static class GetAllVideos

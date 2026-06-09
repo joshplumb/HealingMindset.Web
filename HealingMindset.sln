@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31903.59
+# Visual Studio Version 18
+VisualStudioVersion = 18.6.11822.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{827E0CD3-B72D-47B6-A68D-7590B98EB39B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealingMindset.Api", "src\HealingMindset.Api\HealingMindset.Api.csproj", "{78284F74-981C-438A-BE4F-33306C5AAC84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealingMindset.Repositories", "src\HealingMindset.Repositories\HealingMindset.Repositories.csproj", "{752CCF7D-F472-366B-228B-2386671DB541}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealingMindset.DataAccess", "src\HealingMindset.DataAccess\HealingMindset.DataAccess.csproj", "{D31ED071-BF40-7E57-EBFA-7E7AEE83B996}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,18 +31,18 @@ Global
 		{78284F74-981C-438A-BE4F-33306C5AAC84}.Release|x64.Build.0 = Release|Any CPU
 		{78284F74-981C-438A-BE4F-33306C5AAC84}.Release|x86.ActiveCfg = Release|Any CPU
 		{78284F74-981C-438A-BE4F-33306C5AAC84}.Release|x86.Build.0 = Release|Any CPU
-		{752CCF7D-F472-366B-228B-2386671DB541}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{752CCF7D-F472-366B-228B-2386671DB541}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{752CCF7D-F472-366B-228B-2386671DB541}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{752CCF7D-F472-366B-228B-2386671DB541}.Debug|x64.Build.0 = Debug|Any CPU
-		{752CCF7D-F472-366B-228B-2386671DB541}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{752CCF7D-F472-366B-228B-2386671DB541}.Debug|x86.Build.0 = Debug|Any CPU
-		{752CCF7D-F472-366B-228B-2386671DB541}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{752CCF7D-F472-366B-228B-2386671DB541}.Release|Any CPU.Build.0 = Release|Any CPU
-		{752CCF7D-F472-366B-228B-2386671DB541}.Release|x64.ActiveCfg = Release|Any CPU
-		{752CCF7D-F472-366B-228B-2386671DB541}.Release|x64.Build.0 = Release|Any CPU
-		{752CCF7D-F472-366B-228B-2386671DB541}.Release|x86.ActiveCfg = Release|Any CPU
-		{752CCF7D-F472-366B-228B-2386671DB541}.Release|x86.Build.0 = Release|Any CPU
+		{D31ED071-BF40-7E57-EBFA-7E7AEE83B996}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D31ED071-BF40-7E57-EBFA-7E7AEE83B996}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D31ED071-BF40-7E57-EBFA-7E7AEE83B996}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D31ED071-BF40-7E57-EBFA-7E7AEE83B996}.Debug|x64.Build.0 = Debug|Any CPU
+		{D31ED071-BF40-7E57-EBFA-7E7AEE83B996}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D31ED071-BF40-7E57-EBFA-7E7AEE83B996}.Debug|x86.Build.0 = Debug|Any CPU
+		{D31ED071-BF40-7E57-EBFA-7E7AEE83B996}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D31ED071-BF40-7E57-EBFA-7E7AEE83B996}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D31ED071-BF40-7E57-EBFA-7E7AEE83B996}.Release|x64.ActiveCfg = Release|Any CPU
+		{D31ED071-BF40-7E57-EBFA-7E7AEE83B996}.Release|x64.Build.0 = Release|Any CPU
+		{D31ED071-BF40-7E57-EBFA-7E7AEE83B996}.Release|x86.ActiveCfg = Release|Any CPU
+		{D31ED071-BF40-7E57-EBFA-7E7AEE83B996}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,9 +1,9 @@
 using FluentValidation;
 using HealingMindset.Api.Features.VideoResources;
-using HealingMindset.Repositories.Context;
-using HealingMindset.Repositories.Interfaces;
-using HealingMindset.Repositories.Services;
-using HealingMindset.Repositories.Models;
+using HealingMindset.DataAccess.Context;
+using HealingMindset.DataAccess.Interfaces;
+using HealingMindset.DataAccess.Services;
+using HealingMindset.DataAccess.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
