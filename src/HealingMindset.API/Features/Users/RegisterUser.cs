@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Identity;
 
 namespace HealingMindset.Api.Features.Users;
 public record RegisterUserRequest(string Username, string Email, string Password);
+public record RegisterUserResponse(string Username, string Email);
 public class RegisterUserValidator : AbstractValidator<RegisterUserRequest>
 {
     public RegisterUserValidator()
@@ -25,13 +26,23 @@ public static class RegisterUser
             .WithRequestValidation<RegisterUserRequest>();
     }
 
-    public static async Task<Results<Created<UserModel>, BadRequest> HandleRegisterUser(RegisterUserRequest request, UserDatabaseContext context)
+    public static async Task<Results<Created<RegisterUserResponse>, BadRequest<IEnumerable<IdentityError>>>> HandleRegisterUser(RegisterUserRequest request, UserManager<UserModel> userManager)
     {
         var databaseModel = new UserModel
         {
             UserName = request.Username,
             Email = request.Email,
         };
-        var result = await 
+
+        var result = await userManager.CreateAsync(databaseModel, request.Password);
+
+        if(!result.Succeeded)
+        {
+            return TypedResults.BadRequest(result.Errors);
+        }
+
+        var response = new RegisterUserResponse(databaseModel.UserName, databaseModel.Email);
+
+        return TypedResults.Created($"/api/users/{databaseModel.Id}", response);
     }
 }

@@ -6,6 +6,8 @@ using HealingMindset.DataAccess.Services;
 using HealingMindset.DataAccess.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using HealingMindset.Api.Features.Users;
+using HealingMindset.DataAccess.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,10 +20,13 @@ builder.Services.AddAuthorization();
 builder.Services.AddAuthentication().AddCookie(IdentityConstants.ApplicationScheme);
 
 builder.Services.AddIdentityCore<UserModel>()
-    .AddEntityFrameworkStores<UserDatabaseContext>();
+    .AddEntityFrameworkStores<UserDatabaseContext>()
+    .AddApiEndpoints();
 
-builder.Services.AddScoped<IVideoResourceService, MockVideoService>();
+builder.Services.AddScoped<IVideoResourceService, VideoResourceRepository>();
 builder.Services.AddDbContext<VideoResourceDatabaseContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<UserDatabaseContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddCors(options =>
@@ -45,8 +50,11 @@ if (app.Environment.IsDevelopment())
 
 app.UseCors();
 app.UseHttpsRedirection();
+
 app.UseAuthentication();
 app.UseAuthorization();
+
 app.MapVideoEndpoints();
+app.MapUserEndpoints();
 
 app.Run();

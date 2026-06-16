@@ -9,6 +9,5 @@ public class UserDatabaseContext : IdentityDbContext<UserModel>
     public UserDatabaseContext(DbContextOptions<UserDatabaseContext> options)
         : base(options)
     {
-            
     }
 }
