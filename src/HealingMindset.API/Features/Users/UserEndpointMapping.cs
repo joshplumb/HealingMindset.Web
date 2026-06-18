@@ -7,6 +7,6 @@ public static class UserEndpointMapping
     {
         var userGroup = app.MapGroup("/");
         RegisterUser.MapEndpoint(userGroup);
-
+        LoginUser.MapEndpoint(userGroup);
     }
 }
