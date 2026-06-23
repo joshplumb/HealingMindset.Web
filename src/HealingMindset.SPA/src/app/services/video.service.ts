@@ -17,6 +17,5 @@ export class VideoService {
       tap( data => {(console.log('Data received from API', data));
       })
     );
-
   }
 }

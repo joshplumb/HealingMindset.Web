@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { YouTubePlayer } from '@angular/youtube-player';
-import { VideoService } from '../services/video.service';
+import { VideoService } from '../../../services/video.service';
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs';
 import { AsyncPipe } from '@angular/common';

@@ -1,6 +1,8 @@
 import { Routes } from '@angular/router';
-import { VideoComponent } from './video-component/video-component';
-import { HomeComponent } from './home-component/home-component';
+import { VideoComponent } from './features/videos/video-component/video-component';
+import { HomeComponent } from './features/home/home-component/home-component';
+import { RegisterComponent } from './features/register/register-component/register-component';
+import { AddVideoComponent } from './features/videos/add-video-component/add-video-component';
 
 export const routes: Routes = [
     {
@@ -12,5 +14,15 @@ export const routes: Routes = [
         path: 'video-component',
         component: VideoComponent,
         title: 'video-component'
+    },
+    {
+        path: 'register-component',
+        component: RegisterComponent,
+        title: 'register-component'
+    },
+    {
+        path: 'add-video-component',
+        component: AddVideoComponent,
+        title: 'add-video-component'
     }
 ];

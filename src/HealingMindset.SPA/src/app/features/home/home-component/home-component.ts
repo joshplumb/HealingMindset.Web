@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { VideoComponent } from '../video-component/video-component';
+import { VideoComponent } from '../../videos/video-component/video-component';
 import { RouterLink } from "@angular/router";
 
 @Component({
