@@ -7,13 +7,14 @@ using Microsoft.AspNetCore.Identity;
 
 namespace HealingMindset.Api.Features.Users;
 
-public record LoginUserRequest(string Email, string password);
+public record LoginUserRequest(string Email, string Password);
+public record LoginSuccessResponse(string Username, string Message);
 public class LoginUserValidator : AbstractValidator<LoginUserRequest>
 {
     public LoginUserValidator()
     {
         RuleFor(x => x.Email).NotEmpty();
-        RuleFor(x => x.password).NotEmpty();
+        RuleFor(x => x.Password).NotEmpty();
     }
 }
 public static class LoginUser
@@ -35,11 +36,14 @@ public static class LoginUser
             return Results.BadRequest(new { message = "Invalid email or password" });
         }
 
-        var result = await signInManager.PasswordSignInAsync(user, request.password, isPersistent: true, lockoutOnFailure: false);
+        var result = await signInManager.PasswordSignInAsync(user, request.Password, isPersistent: true, lockoutOnFailure: false);
 
         if (result.Succeeded)
         {
-            return Results.Ok(new { message = "Login was successful" });
+            return Results.Ok(new LoginSuccessResponse(
+                 user.UserName,
+                "Login was successful"
+            ));
         }
 
         return Results.BadRequest(new { message = "Invalid email or password" });

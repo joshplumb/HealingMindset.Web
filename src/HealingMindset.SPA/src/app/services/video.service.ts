@@ -1,6 +1,6 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Video } from '../features/videos/video-model';
+import { VideoModel } from '../features/videos/video-model';
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs';
 
@@ -19,9 +19,9 @@ export class VideoService {
       })
     );
   }
-  createVideo(videoRequest : Video): Observable<Video>{
+  createVideo(videoRequest : VideoModel): Observable<VideoModel>{
     console.log('Server making a post request to the http client', this.apiUrl);
-    return this.http.post<Video>(this.apiUrl, videoRequest).pipe(
+    return this.http.post<VideoModel>(this.apiUrl, videoRequest).pipe(
       tap( data => {(console.log('Data received from API', data));
       })
     );
