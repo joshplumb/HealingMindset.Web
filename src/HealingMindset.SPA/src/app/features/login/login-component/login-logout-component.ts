@@ -5,10 +5,10 @@ import { UserAuthService } from '../../../services/user-auth.service';
 @Component({
   selector: 'app-login-component',
   imports: [ReactiveFormsModule],
-  templateUrl: './login-component.html',
-  styleUrl: './login-component.css',
+  templateUrl: './login-logout-component.css',
+  styleUrl: './login-logout-component.css',
 })
-export class LoginComponent {
+export class LoginLogoutComponent {
 
 isSubmitting = false;
 errorMessage?: string; 

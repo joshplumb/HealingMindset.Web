@@ -1,17 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LoginComponent } from './login-component';
+import { LoginLogoutComponent } from './login-logout-component';
 
-describe('LoginComponent', () => {
-  let component: LoginComponent;
-  let fixture: ComponentFixture<LoginComponent>;
+
+describe('LoginLogoutComponent', () => {
+  let component: LoginLogoutComponent;
+  let fixture: ComponentFixture<LoginLogoutComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LoginComponent],
+      imports: [LoginLogoutComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(LoginComponent);
+    fixture = TestBed.createComponent(LoginLogoutComponent);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
