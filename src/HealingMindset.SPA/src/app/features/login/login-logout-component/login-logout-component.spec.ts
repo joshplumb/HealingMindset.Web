@@ -7,7 +7,7 @@ describe('LoginLogoutComponent', () => {
   let component: LoginLogoutComponent;
   let fixture: ComponentFixture<LoginLogoutComponent>;
 
-  beforeEach(async () => {
+  beforeEach(async () => {5
     await TestBed.configureTestingModule({
       imports: [LoginLogoutComponent],
     }).compileComponents();

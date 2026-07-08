@@ -7,4 +7,4 @@ using Microsoft.AspNetCore.Identity;
 
 namespace HealingMindset.Api.Features.Users;
 
-private record UserStatusResponse(string UserRole, )
+public record UserStatusResponse(string UserRole, string UserId);

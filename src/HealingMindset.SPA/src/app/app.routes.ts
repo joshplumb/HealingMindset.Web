@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import { VideoComponent } from './features/videos/video-component/video-component';
 import { HomeComponent } from './features/home/home-component/home-component';
 import { RegisterComponent } from './features/register/register-component/register-component';
-import { LoginLogoutComponent } from './features/login/login-component/login-logout-component';
+import { LoginLogoutComponent } from './features/login/login-logout-component/login-logout-component';
 import { AddVideoComponent } from './features/videos/add-video-component/add-video-component';
 import { PodcastComponent } from './features/podcasts/podcast-component/podcast-component';
 

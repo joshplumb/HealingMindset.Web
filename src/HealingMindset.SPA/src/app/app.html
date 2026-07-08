@@ -25,7 +25,13 @@
       <a routerLink="/login-logout-component" 
          routerLinkActive="bg-healing-pink text-healing-rose"
          class="block rounded-xl px-4 py-3 font-medium transition-colors hover:bg-[#fff1f2]">
-         Login
+         @if(!isLoggedIn$)
+         {
+            Login
+         }
+         @else{
+            Logout
+         }
       </a>
 
       <a routerLink="/register-component" 

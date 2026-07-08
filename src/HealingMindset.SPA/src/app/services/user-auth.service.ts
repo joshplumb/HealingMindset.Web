@@ -1,7 +1,7 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { LoginModel } from '../features/login/login-component/login-model';
+import { LoginModel } from '../features/login/login-logout-component/login-model';
 import { tap } from 'rxjs';
 
 @Injectable({
@@ -12,7 +12,7 @@ export class UserAuthService {
   private apiLogoutUrl = 'http://localhost:5201/api/users/logout';
 
   private currentUserSubject = new BehaviorSubject<any | null>(null);
-  public currentUser$: Observable<any | null> = this.currentUserSubject.asObservable();
+  public currentUserStatus$: Observable<any | null> = this.currentUserSubject.asObservable();
 
   constructor(private http: HttpClient) {}
 

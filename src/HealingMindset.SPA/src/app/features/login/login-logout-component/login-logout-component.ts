@@ -3,25 +3,31 @@ import { FormGroup, Validators, FormControl, ReactiveFormsModule } from '@angula
 import { UserAuthService } from '../../../services/user-auth.service';
 
 @Component({
-  selector: 'app-login-component',
+  selector: 'app-login-logout-component',
   imports: [ReactiveFormsModule],
-  templateUrl: './login-logout-component.css',
+  templateUrl: './login-logout-component.html',
   styleUrl: './login-logout-component.css',
 })
+
 export class LoginLogoutComponent {
 
-isSubmitting = false;
-errorMessage?: string; 
+  isLoggedIn$;
 
-constructor(private authService: UserAuthService) {}
+  constructor(private authService: UserAuthService) { 
+    this.isLoggedIn$ = this.authService.currentUserStatus$;
+  }
+
+  isSubmitting = false;
+  errorMessage?: string;
+
 
   loginForm = new FormGroup({
     email: new FormControl('', [Validators.required, Validators.email]),
     password: new FormControl('', [Validators.required]),
   });
 
-  onSubmit(){
-    if(this.loginForm.invalid || this.isSubmitting) return;
+  onSubmitLogin() {
+    if (this.loginForm.invalid || this.isSubmitting) return;
 
     this.isSubmitting = true;
     this.errorMessage = undefined;
@@ -32,5 +38,11 @@ constructor(private authService: UserAuthService) {}
         error: () => { this.errorMessage = 'Login failed'; },
         complete: () => { this.isSubmitting = false; }
       });
+  }
+  onSubmitLogout(){
+    if(this.isLoggedIn$)
+    {
+      this.authService.logoutUser()
+    }
   }
 }
