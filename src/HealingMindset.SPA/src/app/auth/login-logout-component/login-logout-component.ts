@@ -13,7 +13,7 @@ import { AsyncPipe } from '@angular/common';
 export class LoginLogoutComponent {
 
   private authService = inject(UserAuthService);
-  _currentUserSubject = this.authService.currentUserSubject;
+  _currentUserSubject$ = this.authService.currentUserSubject$;
 
   isSubmitting = false;
   errorMessage?: string;
@@ -39,7 +39,7 @@ export class LoginLogoutComponent {
   }
 
   onSubmitLogout(){
-    if(this._currentUserSubject.value !== null){
+    if(this._currentUserSubject$.value !== null){
       this.authService.logoutUser();
     }
     else{
