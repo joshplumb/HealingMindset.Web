@@ -1,8 +1,8 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { LoginModel } from '../features/login/login-logout-component/login-model';
 import { tap } from 'rxjs';
+import { UserMode}
 
 @Injectable({
   providedIn: 'root',
@@ -11,17 +11,17 @@ export class UserAuthService {
   private apiLoginUrl = 'http://localhost:5201/api/users/login';
   private apiLogoutUrl = 'http://localhost:5201/api/users/logout';
 
-  private currentUserSubject = new BehaviorSubject<any | null>(null);
-  public currentUserStatus$: Observable<any | null> = this.currentUserSubject.asObservable();
+  public currentUserSubject = new BehaviorSubject<any | null>(null);
+  public currentUser$: Observable<any | null> = this.currentUserSubject.asObservable();
 
   constructor(private http: HttpClient) {}
 
-  loginUser(loginRequest: LoginModel): Observable<LoginModel>{
+  loginUser(email: string, password: string): Observable<any>{
     console.log('Server making a login request to the http client', this.apiLoginUrl);
-    return this.http.post<LoginModel>(this.apiLoginUrl, loginRequest).pipe(
+    return this.http.post<any>(this.apiLoginUrl, {email, password}).pipe(
       tap(data => {
-          (console.log('Data received from the api', loginRequest));
-          this.currentUserSubject.next(loginRequest);
+          (console.log('Data received from the api for', {email}));
+          this.currentUserSubject.next(data);
       })
     );
   }

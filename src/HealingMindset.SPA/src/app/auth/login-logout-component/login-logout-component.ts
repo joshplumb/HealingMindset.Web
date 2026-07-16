@@ -1,25 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormGroup, Validators, FormControl, ReactiveFormsModule } from '@angular/forms';
-import { UserAuthService } from '../../../services/user-auth.service';
+import { UserAuthService } from '../../services/user-auth.service';
+import { AsyncPipe } from '@angular/common';
 
 @Component({
   selector: 'app-login-logout-component',
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, AsyncPipe],
   templateUrl: './login-logout-component.html',
   styleUrl: './login-logout-component.css',
 })
 
 export class LoginLogoutComponent {
 
-  isLoggedIn$;
-
-  constructor(private authService: UserAuthService) { 
-    this.isLoggedIn$ = this.authService.currentUserStatus$;
-  }
+  private authService = inject(UserAuthService);
+  _currentUserSubject = this.authService.currentUserSubject;
 
   isSubmitting = false;
   errorMessage?: string;
-
 
   loginForm = new FormGroup({
     email: new FormControl('', [Validators.required, Validators.email]),
@@ -29,20 +26,24 @@ export class LoginLogoutComponent {
   onSubmitLogin() {
     if (this.loginForm.invalid || this.isSubmitting) return;
 
+    const {email, password} = this.loginForm.value;
     this.isSubmitting = true;
     this.errorMessage = undefined;
 
-    this.authService.loginUser(this.loginForm.value as { email: string; password: string })
+    this.authService.loginUser(email as string, password as string)
       .subscribe({
         next: () => { /* optionally navigate; auth state should update in service */ },
         error: () => { this.errorMessage = 'Login failed'; },
         complete: () => { this.isSubmitting = false; }
       });
   }
+
   onSubmitLogout(){
-    if(this.isLoggedIn$)
-    {
-      this.authService.logoutUser()
+    if(this._currentUserSubject.value !== null){
+      this.authService.logoutUser();
+    }
+    else{
+      return;
     }
   }
 }
