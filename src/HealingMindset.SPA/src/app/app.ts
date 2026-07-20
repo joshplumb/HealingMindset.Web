@@ -2,6 +2,7 @@ import { Component, inject, signal } from '@angular/core';
 import { AsyncPipe } from '@angular/common';
 import { RouterOutlet, RouterLinkActive, RouterLink } from '@angular/router';
 import { UserAuthService } from './services/user-auth.service';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -14,10 +15,12 @@ export class App {
 
   private authService = inject(UserAuthService);
 
-  isLoggedIn$;
+  isLoggedIn$ = this.authService.currentUser$.pipe(
+    map(user => user !== null)
+    );
 
-  constructor(){
-    this.isLoggedIn$ = this.authService.currentUser$
+  ngOnInit()
+  {
+    this.authService.fetchCurrentUser();
   }
-
 }

@@ -16,7 +16,12 @@ export class UserAuthService {
   constructor(private http: HttpClient) {}
 
   fetchCurrentUser(): Observable<User>{
-    return this.http.get<User>(`${this.apiBaseAuthUrl}/current`)
+    console.log('Server making a fetch request for the current user', '$this.apiBaseAuthUrl}/current');
+    return this.http.get<User>(`${this.apiBaseAuthUrl}/current`, {withCredentials:true}).pipe(
+      tap(data =>{
+        (console.log('Current user has been retreived'));
+      })
+    );
   }
 
   loginUser(email: string, password: string): Observable<User>{

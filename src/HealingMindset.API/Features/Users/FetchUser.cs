@@ -28,11 +28,11 @@ public static class FetchUser
         {
             return Results.NotFound();
         }
-        return Results.Ok(new
-        {
-            Id = user.Id,
-            Email = user.Email,
-            UserName = user.UserName
-        });
+        return Results.Ok(new FetchUserResponse
+        (
+            user.Id,
+            user.Email,
+            user.UserName
+        ));
     }
 }
