@@ -8,21 +8,20 @@ import { User } from '../models/User';
   providedIn: 'root',
 })
 export class UserAuthService {
-  private apiLoginUrl = 'http://localhost:5201/api/users/login';
-  private apiLogoutUrl = 'http://localhost:5201/api/users/logout';
+  private apiBaseAuthUrl = 'http://localhost:5201/api/users';
 
   public currentUserSubject$ = new BehaviorSubject<any | null>(null);
   public currentUser$: Observable<any | null> = this.currentUserSubject$.asObservable();
 
   constructor(private http: HttpClient) {}
 
-  me(): Observable<User>{
-    return this.http.get<User>
+  fetchCurrentUser(): Observable<User>{
+    return this.http.get<User>(`${this.apiBaseAuthUrl}/current`)
   }
 
   loginUser(email: string, password: string): Observable<User>{
-    console.log('Server making a login request to the http client', this.apiLoginUrl);
-    return this.http.post<User>(this.apiLoginUrl, {email, password}).pipe(
+    console.log('Server making a login request to the http client', '${this.apiBaseAuthUrl}/login');
+    return this.http.post<User>(`${this.apiBaseAuthUrl}/login`, {email, password}).pipe(
       tap(data => {
           (console.log('Data received from the api for', {email}));
           this.currentUserSubject$.next(data);
@@ -31,8 +30,8 @@ export class UserAuthService {
   }
   
   logoutUser(): Observable<User>{
-    console.log('Loggin out via', this.apiLogoutUrl);
-    return this.http.post<User>(this.apiLogoutUrl, null).pipe(
+    console.log('Loggin out via', `${this.apiBaseAuthUrl}/logout`);
+    return this.http.post<User>(`${this.apiBaseAuthUrl}/logout`, null).pipe(
       tap(data => {
         [console.log('Data received from the api')];
         this.currentUserSubject$.next(null);
