@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { BehaviorSubject, catchError, Observable, of } from 'rxjs';
 import { tap } from 'rxjs';
 import { User } from '../models/User';
 
@@ -17,12 +17,15 @@ export class UserAuthService {
     this.fetchCurrentUser().subscribe();
   }
 
-  fetchCurrentUser(): Observable<User>{
+  fetchCurrentUser(): Observable<User | null>{
     console.log('Server making a fetch request for the current user', '${this.apiBaseAuthUrl}/current');
     return this.http.get<User>(`${this.apiBaseAuthUrl}/current`, {withCredentials:true}).pipe(
       tap(user =>{
         (console.log('Current user has been retreived', user));
         this.currentUserSubject$.next(user);
+      }), catchError(err => {
+        this.currentUserSubject$.next(null);
+        return of(null);
       })
     );
   }
