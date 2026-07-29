@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { FormGroup, Validators, FormControl, ReactiveFormsModule } from '@angular/forms';
 import { UserAuthService } from '../../services/user-auth.service';
 import { AsyncPipe } from '@angular/common';
+import { map } from 'rxjs';
 
 @Component({
   selector: 'app-login-logout-component',
@@ -13,10 +14,14 @@ import { AsyncPipe } from '@angular/common';
 export class LoginLogoutComponent {
 
   private authService = inject(UserAuthService);
-  _currentUserSubject$ = this.authService.currentUserSubject$;
+  _currentUser$ = this.authService.currentUser$.subscribe();
 
   isSubmitting = false;
   errorMessage?: string;
+
+  readonly isLoggedIn$ = this.authService.currentUser$.pipe(
+    map(user => user !== null)
+  );
 
   loginForm = new FormGroup({
     email: new FormControl('', [Validators.required, Validators.email]),
@@ -39,7 +44,7 @@ export class LoginLogoutComponent {
   }
 
   onSubmitLogout(){
-    if(this._currentUserSubject$.value !== null){
+    if(this._currentUser$ !== null){
       this.authService.logoutUser();
     }
     else{

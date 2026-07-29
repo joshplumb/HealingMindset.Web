@@ -1,4 +1,4 @@
-import { Injectable, inject } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { tap } from 'rxjs';
@@ -8,28 +8,32 @@ import { User } from '../models/User';
   providedIn: 'root',
 })
 export class UserAuthService {
-  private apiBaseAuthUrl = 'http://localhost:5201/api/users';
+  private apiBaseAuthUrl = 'https://localhost:7238/api/users';
 
-  public currentUserSubject$ = new BehaviorSubject<any | null>(null);
-  public currentUser$: Observable<any | null> = this.currentUserSubject$.asObservable();
+  private currentUserSubject$ = new BehaviorSubject<User | null>(null);
+  public currentUser$ = this.currentUserSubject$.asObservable();
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+    this.fetchCurrentUser().subscribe();
+  }
 
   fetchCurrentUser(): Observable<User>{
-    console.log('Server making a fetch request for the current user', '$this.apiBaseAuthUrl}/current');
+    console.log('Server making a fetch request for the current user', '${this.apiBaseAuthUrl}/current');
     return this.http.get<User>(`${this.apiBaseAuthUrl}/current`, {withCredentials:true}).pipe(
-      tap(data =>{
-        (console.log('Current user has been retreived'));
+      tap(user =>{
+        (console.log('Current user has been retreived', user));
+        this.currentUserSubject$.next(user);
       })
     );
   }
 
   loginUser(email: string, password: string): Observable<User>{
     console.log('Server making a login request to the http client', '${this.apiBaseAuthUrl}/login');
-    return this.http.post<User>(`${this.apiBaseAuthUrl}/login`, {email, password}).pipe(
-      tap(data => {
-          (console.log('Data received from the api for', {email}));
-          this.currentUserSubject$.next(data);
+    return this.http.post<User>(`${this.apiBaseAuthUrl}/login`, {email, password}, {withCredentials: true})
+    .pipe(
+      tap(user => {
+          (console.log('Data received from the api for', user));
+          this.currentUserSubject$.next(user);
       })
     );
   }

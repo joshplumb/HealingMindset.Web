@@ -1,6 +1,6 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { VideoModel } from '../features/videos/video-model';
+import { VideoModel } from '../models/video-model';
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs';
 

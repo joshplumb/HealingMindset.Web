@@ -19,8 +19,5 @@ export class App {
     map(user => user !== null)
     );
 
-  ngOnInit()
-  {
-    this.authService.fetchCurrentUser();
-  }
+  
 }
