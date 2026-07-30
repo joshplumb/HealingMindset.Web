@@ -19,6 +19,6 @@ export class VideoComponent {
 
   ngOnInit(): void {
     this.videos$ = this.videoService.getVideos().pipe
-    (tap(data=> console.log('Data flowing through pipe', data)));
+    (tap(data=> console.log('Video data flowing through pipe', data)));
   }
 }

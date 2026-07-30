@@ -44,11 +44,16 @@ export class LoginLogoutComponent {
   }
 
   onSubmitLogout(){
-    if(this._currentUser$ !== null){
-      this.authService.logoutUser();
-    }
-    else{
-      return;
-    }
+    if(this._currentUser$ === null) return;
+
+    this.isSubmitting = true;
+    this.errorMessage = undefined;
+
+    this.authService.logoutUser()
+    .subscribe({
+      next:() => {},
+      error: () => { this.errorMessage = 'Logout failed'; },
+      complete: () => { this.isSubmitting = false; }
+    });
   }
 }

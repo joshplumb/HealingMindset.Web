@@ -8,12 +8,12 @@ import { tap } from 'rxjs';
   providedIn: 'root',
 })
 export class VideoService {
-  private apiUrl = 'http://localhost:5201/api/videos'; // Your Web API endpoint
+  private apiUrl = 'https://localhost:7238/api/videos'; // Your Web API endpoint
 
   constructor(private http: HttpClient) {}
 
   getVideos(): Observable<any[]>{
-    console.log('Server making a get request to the http client', this.apiUrl);
+    console.log('Server making a get request for videos to the http client', this.apiUrl);
     return this.http.get<any[]>(this.apiUrl).pipe(
       tap( data => {(console.log('Data received from API', data));
       })

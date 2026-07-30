@@ -24,6 +24,7 @@ export class UserAuthService {
         (console.log('Current user has been retreived', user));
         this.currentUserSubject$.next(user);
       }), catchError(err => {
+        (console.log('Cannot retreive user data'));
         this.currentUserSubject$.next(null);
         return of(null);
       })
@@ -45,7 +46,7 @@ export class UserAuthService {
     console.log('Loggin out via', `${this.apiBaseAuthUrl}/logout`);
     return this.http.post<User>(`${this.apiBaseAuthUrl}/logout`, null).pipe(
       tap(data => {
-        [console.log('Data received from the api')];
+        [console.log('Logout was successful')];
         this.currentUserSubject$.next(null);
       })
     )
