@@ -22,7 +22,7 @@ public static class CreateVideo
         app.MapPost("/", HandleCreateVideoResource)
            .WithSummary("Create new video")
            .WithRequestValidation<CreateVideoRequest>()
-           .RequireAuthorization();
+           /*.RequireAuthorization()*/;
     }
     public static async Task<Results<Created<VideoResourceModel>, BadRequest>> HandleCreateVideoResource(CreateVideoRequest request, IVideoResourceService videoService)
     {

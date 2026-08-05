@@ -2,6 +2,11 @@
   <aside class="w-64 border-r border-[#fecaca] bg-white p-6 shadow-sm">
     <nav class="space-y-4">
       <h2 class="font-serif text-xl italic text-healing-deep mb-8">Healing Mindset</h2>
+
+      @if(isLoggedIn$ | async)
+         {
+            <h1>Welcome back {{userName$ | async}}</h1>
+         }
       
       <a routerLink="/" 
          routerLinkActive="bg-healing-pink text-healing-rose" 

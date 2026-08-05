@@ -17,7 +17,9 @@ export class App {
 
   isLoggedIn$ = this.authService.currentUser$.pipe(
     map(user => user !== null)
-    );
+  );
 
-  
+  userName$ = this.authService.currentUser$.pipe(
+    map(user => user?.username)
+  );
 }

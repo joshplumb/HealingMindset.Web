@@ -1,35 +1,36 @@
 <div class="add-video-card">
   <div class="card-title">Add Video</div>
   
-  <div class="card-body">
-    <div class="input-row">
-      <input 
-        type="text" 
-        name="name" 
-        class="form-input" 
-        formControlName="videoName"
-        placeholder="Video Name *" 
-      />
-      <input 
-        type="url" 
-        name="url" 
-        class="form-input" 
-        formControlName="videoUrl"
-        placeholder="Video URL *" 
-      />
-    </div>
+    <form class="card-body" [formGroup]="addVideoForm">
+      <div class="input-row">
+        <input 
+          type="text" 
+          name="name" 
+          class="form-input" 
+          formControlName="title"
+          placeholder="Video Name *" 
+        />
+        <input 
+          type="url" 
+          name="url" 
+          class="form-input" 
+          formControlName="youtubeId"
+          placeholder="Video URL *" 
+        />
+      </div>
 
-    <div class="textarea-wrapper">
-      <textarea 
-        name="description" 
-        id="text" 
-        class="form-textarea" 
-        placeholder="Video Description"
-      ></textarea>
-    </div>
+      <div class="textarea-wrapper">
+        <textarea 
+          name="description" 
+          id="text" 
+          class="form-textarea" 
+          formControlName="description"
+          placeholder="Video Description"
+        ></textarea>
+      </div>
 
-    <div class="button-wrapper">
-      <button (click)="onSubmitAddVideo()" type="submit" class="submit-btn">Submit</button>
-    </div>
-  </div>
+      <div class="button-wrapper">
+        <button (click)="onSubmitAddVideo()" type="button" class="submit-btn">Submit</button>
+      </div>
+    </form>
 </div>
