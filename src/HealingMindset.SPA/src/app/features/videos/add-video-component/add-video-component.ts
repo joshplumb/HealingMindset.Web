@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { ReactiveFormsModule, FormGroup, FormControl, Validators } from '@angular/forms';
 import { VideoService } from '../../../services/video.service';
 import { VideoModel } from '../../../models/video-model';
+import { extractYoutubeId } from '../../../utils/youtube.utils';
 
 @Component({
   selector: 'app-add-video-component',
@@ -23,7 +24,13 @@ export class AddVideoComponent {
   });
 
   onSubmitAddVideo(){
-    const vidModel: VideoModel = this.addVideoForm.value as VideoModel;
+    const formValues = this.addVideoForm.value;
+
+    const vidModel: VideoModel = {
+      ... formValues, 
+      youtubeId: extractYoutubeId(formValues.youtubeId ?? '')
+    } as VideoModel
+
     this.isSubmitting = true;
     this.errorMessage = undefined;
 

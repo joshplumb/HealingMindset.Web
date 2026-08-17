@@ -32,9 +32,10 @@ export const routes: Routes = [
         component: AddVideoComponent,
         title: 'add-video-component'
     },
-    {
+    /*{
         path: 'podcast-component',
         component: PodcastComponent,
         title: 'podcast-component'
     }
+    */
 ];

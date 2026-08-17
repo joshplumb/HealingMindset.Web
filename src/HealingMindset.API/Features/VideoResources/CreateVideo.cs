@@ -2,6 +2,7 @@
 using HealingMindset.Api.Filters;
 using HealingMindset.DataAccess.Interfaces;
 using HealingMindset.DataAccess.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace HealingMindset.Api.Features.VideoResources;
@@ -22,7 +23,7 @@ public static class CreateVideo
         app.MapPost("/", HandleCreateVideoResource)
            .WithSummary("Create new video")
            .WithRequestValidation<CreateVideoRequest>()
-           /*.RequireAuthorization()*/;
+           .RequireAuthorization(new AuthorizeAttribute { Roles = "Admin"});
     }
     public static async Task<Results<Created<VideoResourceModel>, BadRequest>> HandleCreateVideoResource(CreateVideoRequest request, IVideoResourceService videoService)
     {
